@@ -27,3 +27,15 @@ jobs:
         with: 
           name: assets-for-download
           path: downloads
+      
+      - name: Step 4 - Use the Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v2
+        with: 
+          name: different-name
+          path: downloads
+      
+      - name: Step 5 - Use the Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v2
+        with: 
+          name: and-another 
+          path: downloads
